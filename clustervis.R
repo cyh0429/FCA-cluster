@@ -16,7 +16,7 @@ library(data.table)
 library(ggplot2)
 library(ggpubr)
 library(Cairo)
-data<-read.table(file='F:/20230721/geno/cluster/th.csv',header=TRUE,row.names= 1,sep=',')
+data<-read.table(file='path/data.csv',header=TRUE,row.names= 1,sep=',')
 head(data,3)
 #vis
 data<-data
