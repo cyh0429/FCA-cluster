@@ -19,7 +19,7 @@ library(Cairo)
 
 data<-read.table(file='path/study data.csv',header=TRUE,row.names= 1,sep=',')
 head(data,3)
-data<-data
+data<-data[,c(5:10)]
 set.seed(123456)
 getClusters(exp = data)
 # using mfuzz for clustering
