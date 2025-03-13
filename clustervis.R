@@ -17,7 +17,7 @@ library(ggplot2)
 library(ggpubr)
 library(Cairo)
 
-data<-read.table(file='path/data.csv',header=TRUE,row.names= 1,sep=',')
+data<-read.table(file='path/study data.csv',header=TRUE,row.names= 1,sep=',')
 head(data,3)
 data<-data
 set.seed(123456)
