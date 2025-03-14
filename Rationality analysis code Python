@@ -119,7 +119,7 @@ fig.suptitle("RandomForestRegressor")
 fig.tight_layout()
 #plt.savefig('RandomForestRegressor.pdf') 
 
-writer_orig = pd.ExcelWriter('Chla modelling results-归一化-RandomForestRegressor.xlsx', engine='xlsxwriter')
+writer_orig = pd.ExcelWriter('Chla modelling results-RandomForestRegressor.xlsx', engine='xlsxwriter')
 train_scores.to_excel(writer_orig, startrow = 0, startcol = 0, index=False, sheet_name='model evaluation')
 test_scores.to_excel(writer_orig, startrow = 0, startcol = 5, index=False, sheet_name='model evaluation')
 
