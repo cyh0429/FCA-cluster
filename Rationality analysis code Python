@@ -14,7 +14,7 @@ Chla['name'] = enc.transform(Chla['name']) +1
 enc.fit(Chla['lake']) 
 Chla['lake'] = enc.transform(Chla['lake'])+1  
 
-X=Chla.iloc[:,np.r_[1:13,14]]
+X=Chla.iloc[:,np.r_[1:13]]
 y=Chla['chla']
 #test and train
 from sklearn.model_selection import train_test_split
