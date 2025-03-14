@@ -16,10 +16,10 @@ library(data.table)
 library(ggplot2)
 library(ggpubr)
 library(Cairo)
-#Set according to your own path
+#Set according to your own path, 3 sheets are chla, wind, and air temperature.
 data<-read.table(file='path/study data.csv',header=TRUE,row.names= 1,sep=',')
 head(data,3)
-data<-data[,c(5:10)] #just use T1-T6, AirT use T1-T7
+data<-data[,c(5:10)] #just use T1-T6, AirT use T1-T7, according to which sheet you want to use. 
 set.seed(123456)
 getClusters(exp = data)
 # using mfuzz for clustering
